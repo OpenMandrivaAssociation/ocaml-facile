@@ -1,6 +1,6 @@
 Name:           ocaml-facile
 Version:        1.1
-Release:        %mkrel 1
+Release:        %mkrel 2
 Summary:        OCaml library for constraint programming
 License:        LGPL
 Group:          Development/Other
@@ -39,7 +39,7 @@ The %{name}-devel package contains libraries and signature files for
 developing applications that use %{name}.
 
 %package        doc
-Summary:        Development files for %{name}
+Summary:        Documentation for %{name}
 Group:          Development/Other
 Requires:       %{name} = %{version}-%{release}
 
