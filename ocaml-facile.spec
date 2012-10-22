@@ -1,6 +1,6 @@
 Name:           ocaml-facile
 Version:        1.1
-Release:        %mkrel 2
+Release:        3
 Summary:        OCaml library for constraint programming
 License:        LGPL
 Group:          Development/Other
