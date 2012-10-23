@@ -10,6 +10,7 @@ Source1:        http://www.recherche.enac.fr/opti/facile/distrib/facile-%{versio
 Source2:        http://www.recherche.enac.fr/opti/facile/distrib/facile-%{version}-man.html.tar.gz
 Source3:        META-facile.in
 Patch0:         examples-Makefile-buildall.patch
+Patch1:         Hashtbl_create_for_ocaml_4.00.patch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}
 BuildRequires:  ocaml-findlib
 
@@ -49,6 +50,7 @@ The %{name}-doc package contains documentation for the library %{name}.
 %prep
 %setup -q -n facile-%{version}
 %patch0 -p0
+%patch1 -p1
 cp %{SOURCE1} ./
 (mkdir manual && cd manual && tar xzf %{SOURCE2})
 sed -e 's/@VERSION@/%{verison}/g' < %{SOURCE3} > META
