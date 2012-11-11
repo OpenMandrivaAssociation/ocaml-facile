@@ -1,0 +1,12 @@
+--- examples/Makefile.orig	2009-09-11 05:19:33.000000000 +0200
++++ examples/Makefile	2009-09-11 05:21:00.000000000 +0200
+@@ -15,6 +15,9 @@
+ .SUFFIXES:
+ .SUFFIXES: .ml .mli .mly .mll .cmi .cmo .cmx .out .opt .p.cmx .popt
+ 
++all:
++	for f in *.ml; do $(MAKE) `basename $$f .ml`.opt FACILEDIR=$(FACILEDIR); done
++
+ .ml.cmo :
+ 	$(OCAMLC) -c $<
+ .mli.cmi :
