@@ -4,7 +4,7 @@ Release:        4
 Summary:        OCaml library for constraint programming
 License:        LGPL
 Group:          Development/Other
-URL:            http://www.recherche.enac.fr/opti/facile/
+URL:            https://www.recherche.enac.fr/opti/facile/
 Source0:        http://www.recherche.enac.fr/opti/facile/distrib/facile-%{version}.tar.gz
 Source1:        http://www.recherche.enac.fr/opti/facile/distrib/facile-%{version}-man.pdf
 Source2:        http://www.recherche.enac.fr/opti/facile/distrib/facile-%{version}-man.html.tar.gz
